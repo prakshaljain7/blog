@@ -4,5 +4,6 @@ from django.shortcuts import render , HttpResponse
 
 def home(request) :
     name = 'Piyush'
-    arg = {'name':name}
+    numbers = [1,2,3,4,5]
+    arg = {'name':name, 'numbers':numbers }
     return render(request, 'login/login.html',arg)
