@@ -1,49 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+{% extends 'base.html' %}
 
-  <title>deeksha nayar</title>
-  <meta name="author" content="Piyush" />
-  <meta name="theme-color" content="#a50509">
-  <meta name="description" content="Hi! I'm Piyush , second  year Computer Science undergrad from USICT, New Delhi. I'm a programmer, software developer, former GSoC student, loves to create digital art, listen to music and play video games.">
-  <meta name="keywords" content="Piyush, Mehndiratta, geek, anroid, gsoc">
+  {% block head %}
 
-  <link rel="alternate" type="application/rss+xml" title="Piyush Mehndiratta  - Let me introduce you to my geek side !" href="" />
-
-
-
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
-
-
-
-
-
-      <link rel="stylesheet" href="/css/bootstrap.min.css" />
-
-      <link rel="stylesheet" href="/css/bootstrap-social.css" />
-
-      <link rel="stylesheet" href="/css/main.css" />
+<title>
+    Index page
+</title>
 
   <meta property="og:title" content="Hi, I'm piyush" />
-
   <meta property="og:description" content="Let me introduce you to my geek side !">
-
   <meta property="og:type" content="website" />
-
-
   <meta property="og:url" content="http://piyush.in/" />
   <link rel="canonical" href="http://piyush.in/" />
 
   <meta property="og:image" content="http://piyush.in/img/av.png" />
 
-
-
-</head>
-
-  <body>
+{% endblock %}
+{% block body %}
 
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
@@ -106,5 +78,11 @@
 
   </div>
 </nav>
-</body>
-</html>
+{% endblock %}
+
+{% block content %}
+<h1>Test 1</h1>
+{% endblock %}
+{% block morecontent %}
+<h1>Test 2</h1>
+{% endblock %}
