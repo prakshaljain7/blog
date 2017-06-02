@@ -3,4 +3,6 @@ from django.shortcuts import render , HttpResponse
 # Create your views here.
 
 def home(request) :
-    return render(request, 'login/login.html')
+    name = 'Piyush'
+    arg = {'name':name}
+    return render(request, 'login/login.html',arg)
